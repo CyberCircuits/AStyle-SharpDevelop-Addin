@@ -1,0 +1,37 @@
+<AddIn name        = "AStyle"
+       author      = "Lex Mark"
+       url         = "http://blog.csdn.net/lextm"
+       description = "Code Formatter AddIn for C#">
+	<Manifest>
+		<Identity name="Lextm.AStyle"/>
+		<Dependency addin="SharpDevelop" version="2.1"/>
+	</Manifest>
+	
+	<Runtime>
+		<Import assembly = "AStyle.dll"/>
+	</Runtime>
+	<!--
+	<Path name = "/SharpDevelop/Dialogs/OptionsDialog">
+		<DialogPanel id    = "ToolsOptions"
+		             label = "AStyle AddIn">
+			<DialogPanel id    = "AStyleOptions"
+			             label = "AStyle for C#"
+			             class = "AStyle.NewOptionPanel"/>
+		</DialogPanel>
+	</Path>
+	-->
+	
+	<Path name = "/Workspace/Tools">
+		<Condition name="SolutionOpen" action="disable">
+			<MenuItem id = "AStyleCommand1"
+			          label = "AStyle for C#"
+			          shortcut = "Control|W"
+			          class = "Lextm.AStyle.FormatCodeCommand"/>
+		</Condition>
+	</Path>
+	<Path name = "/Workspace/Tools">
+			<MenuItem id = "AStyleCommand2"
+			          label = "AStyle options"
+			          class = "Lextm.AStyle.ShowOptionsCommand"/>
+	</Path>
+</AddIn>
