@@ -4,7 +4,7 @@
        description = "Code Formatter AddIn for C#">
 	<Manifest>
 		<Identity name="Lextm.AStyle"/>
-		<Dependency addin="SharpDevelop" version="2.1"/>
+		<Dependency addin="SharpDevelop" version="3.0"/>
 	</Manifest>
 	
 	<Runtime>
