@@ -1,7 +1,7 @@
 <AddIn name        = "AStyle"
-       author      = "Lex Mark"
-       url         = "http://blog.csdn.net/lextm"
-       description = "Code Formatter AddIn for C#">
+       author      = "Lex Li"
+       url         = "http://www.lextm.com"
+       description = "Code Formatter AddIn for C# Based on AStyle">
 	<Manifest>
 		<Identity name="Lextm.AStyle"/>
 		<Dependency addin="SharpDevelop" version="3.0"/>
