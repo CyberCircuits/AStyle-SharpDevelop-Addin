@@ -22,18 +22,21 @@ using System.IO;
 using System.Text;
 using System.Xml;
 
-namespace Lextm.AStyle {
+namespace Lextm.AStyle
+{
     /// <summary>
     /// Description of PreferencesManager.
     /// </summary>
-    public class PreferencesManager {
+    public class PreferencesManager
+    {
         private PreferencesManager() {}
         /// <summary>
         /// Saves preferences.
         /// </summary>
         /// <param name="fileName">FileName</param>
         /// <param name="preferences">Preferences</param>
-        public static void SavePreferences(string fileName, object preferences) {
+        public static void SavePreferences(string fileName, object preferences)
+        {
             SavePreferences(fileName, preferences, preferences.GetType());
         }
         /// <summary>
@@ -42,16 +45,16 @@ namespace Lextm.AStyle {
         /// <param name="fileName">FileName</param>
         /// <param name="preferences">Preferences</param>
         /// <param name="type">Type of preferences object</param>
-        public static void SavePreferences(string fileName, object preferences, Type type) {
+        public static void SavePreferences(string fileName, object preferences, Type type)
+        {
             Debug.Assert(fileName != null);
 
             XmlSerializer _Serializer = new XmlSerializer(type);
             Stream _FileStream = null;
-			string folder = Path.GetDirectoryName(fileName);
-			if (!Directory.Exists(folder))
-			{
-				Directory.CreateDirectory(folder);
-			}
+            string folder = Path.GetDirectoryName(fileName);
+            if (!Directory.Exists(folder)) {
+                Directory.CreateDirectory(folder);
+            }
 
             try {
                 _FileStream = new FileStream(fileName, FileMode.Create);
@@ -80,7 +83,8 @@ namespace Lextm.AStyle {
         /// </summary>
         /// <param name="fileName">File name</param>
         /// <param name="type">Type of preferences object</param>
-        public static object LoadPreferences(string fileName, Type type) {
+        public static object LoadPreferences(string fileName, Type type)
+        {
             Debug.Assert(fileName != null);
 
             object result = null;
@@ -98,8 +102,8 @@ namespace Lextm.AStyle {
                 // cannot find the file
                 Debug.WriteLine("no file");
                 //OTAUtils.AddMessage("Cannot find the file");
-			} catch (ArgumentException) {}
-			
+            } catch (ArgumentException) {}
+
             XmlReader _Reader = null;
 
             try {
@@ -113,7 +117,7 @@ namespace Lextm.AStyle {
             } catch (XmlException) {
                 //OTAUtils.AddMessage("Cannot read the preferences file.");
             } catch (InvalidOperationException) {
-			} finally {
+            } finally {
                 if (_Reader != null) {
                     _Reader.Close();
                 } else {

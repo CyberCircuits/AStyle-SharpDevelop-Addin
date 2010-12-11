@@ -1,6 +1,7 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 10.00
-# Visual C# Express 2008
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+# SharpDevelop 4.0.0.6933
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AStyle", "AStyle.csproj", "{6A433F1A-74F5-4EA5-B217-970E3704709F}"
 EndProject
 Global
