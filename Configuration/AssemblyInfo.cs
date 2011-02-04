@@ -8,12 +8,12 @@ using System.Runtime.InteropServices;
 // change them to the information which is associated with the assembly
 // you compile.
 
-[assembly: AssemblyTitle("AStyle")]
+[assembly: AssemblyTitle("AStyle Addin for SharpDevelop")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("AStyle")]
-[assembly: AssemblyCopyright("")]
+[assembly: AssemblyCompany("LeXtudio")]
+[assembly: AssemblyProduct("Alex")]
+[assembly: AssemblyCopyright("Copyright (C) 2006-2010, Lex Li")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -28,4 +28,4 @@ using System.Runtime.InteropServices;
 // You can specify all values by your own or you can build default build and revision
 // numbers with the '*' character (the default):
 
-[assembly: AssemblyVersion("3.0.*")]
+[assembly: AssemblyVersion("3.1.*")]
