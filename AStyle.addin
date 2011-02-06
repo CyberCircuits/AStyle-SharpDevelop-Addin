@@ -1,14 +1,14 @@
-<AddIn name        = "AStyle"
+<AddIn name        = "AStyleAddin"
        author      = "Lex Li"
        url         = "http://www.lextm.com"
-       description = "Code Formatter AddIn for C# Based on AStyle">
+       description = "Astyle code formatter addin for C#">
     <Manifest>
-        <Identity name="Lextm.AStyle"/>
+        <Identity name="AStyleAddin" version="@AStyleAddin.dll"/>
         <Dependency addin="SharpDevelop" version="4.1"/>
     </Manifest>
     
     <Runtime>
-        <Import assembly = "AStyle.dll"/>
+        <Import assembly = "AStyleAddin.dll"/>
     </Runtime>
     <!--
     <Path name = "/SharpDevelop/Dialogs/OptionsDialog">
@@ -31,7 +31,7 @@
     </Path>
     <Path name = "/Workspace/Tools">
             <MenuItem id = "AStyleCommand2"
-                      label = "AStyle options"
+                      label = "AStyle Options"
                       class = "Lextm.AStyle.ShowOptionsCommand"/>
     </Path>
 </AddIn>
