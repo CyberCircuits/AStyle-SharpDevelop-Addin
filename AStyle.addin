@@ -25,7 +25,7 @@
         <Condition name="SolutionOpen" action="disable">
             <MenuItem id = "AStyleCommand1"
                       label = "AStyle for C#"
-                      shortcut = "Control|W"
+                      shortcut = "Control|Shift|W"
                       class = "Lextm.AStyle.FormatCodeCommand"/>
         </Condition>
     </Path>
