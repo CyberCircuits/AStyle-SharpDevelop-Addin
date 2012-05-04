@@ -4,7 +4,7 @@
        description = "Astyle code formatter addin for C#">
     <Manifest>
         <Identity name="AStyleAddin" version="@AStyleAddin.dll"/>
-        <Dependency addin="SharpDevelop" version="4.1"/>
+        <Dependency addin="SharpDevelop" version="4.2"/>
     </Manifest>
     
     <Runtime>
