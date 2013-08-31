@@ -3,12 +3,12 @@
        url         = "http://www.lextm.com"
        description = "Astyle code formatter addin for C#">
     <Manifest>
-        <Identity name="AStyleAddin" version="@AStyleAddin.dll"/>
-        <Dependency addin="SharpDevelop" version="4.2"/>
+        <Identity name="AStyleAddin" version="@AStyle.dll"/>
+        <Dependency addin="SharpDevelop" version="4.3"/>
     </Manifest>
     
     <Runtime>
-        <Import assembly = "AStyleAddin.dll"/>
+        <Import assembly = "AStyle.dll"/>
     </Runtime>
     <!--
     <Path name = "/SharpDevelop/Dialogs/OptionsDialog">
@@ -25,7 +25,7 @@
         <Condition name="SolutionOpen" action="disable">
             <MenuItem id = "AStyleCommand1"
                       label = "AStyle for C#"
-                      shortcut = "Control|Shift|W"
+                      shortcut = "Control|Shift|Q"
                       class = "Lextm.AStyle.FormatCodeCommand"/>
         </Condition>
     </Path>
